@@ -1,25 +1,13 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import HuggingFaceTextGenerator from './components/HuggingFaceTextGenerator'; // Import du composant
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-
-          Coucou
-
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Mon Application avec Hugging Face</h1>
+        <HuggingFaceTextGenerator />  {/* Utilisation du composant */}
       </header>
     </div>
   );
